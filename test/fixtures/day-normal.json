@@ -1,0 +1,85 @@
+{
+  "v": 1,
+  "d": "22-10-2026",
+  "t": "2026-10-22T17:42:00Z",
+  "s": 0,
+  "x": 0,
+  "sec": [
+    {
+      "ic": "fa-code-branch",
+      "c": "#3b82f6",
+      "i": [
+        {
+          "t": "Code review on several pull requests.",
+          "c": [
+            {
+              "t": "List of pull requests:",
+              "c": [
+                {
+                  "t": "[acme/webapp#181](https://github.com/acme/webapp/pull/181 \"ref:fa-code-pull-request\")"
+                },
+                {
+                  "t": "[acme/webapp#182](https://github.com/acme/webapp/pull/182 \"ref:fa-code-pull-request\")"
+                },
+                {
+                  "t": "[acme/webapp#183](https://github.com/acme/webapp/pull/183 \"ref:fa-code-pull-request\")"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ic": "fa-people-group",
+      "c": "#8b5cf6",
+      "i": [
+        {
+          "t": "Joined meetings:",
+          "c": [
+            {
+              "t": "Incident review"
+            },
+            {
+              "t": "Architecture discussion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ic": "fa-ticket",
+      "c": "#f97316",
+      "i": [
+        {
+          "t": "Worked on [ABC-425](https://jira.example.com/browse/ABC-425 \"ref:fa-ticket\"): dashboard caching",
+          "c": [
+            {
+              "t": "Branch: `feature/ABC-425`"
+            },
+            {
+              "t": "Pull Request: [acme/webapp#184](https://github.com/acme/webapp/pull/184 \"ref:fa-code-pull-request\")"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ic": "fa-ticket",
+      "c": "#f97316",
+      "i": [
+        {
+          "t": "Worked on [ABC-426](https://jira.example.com/browse/ABC-426 \"ref:fa-ticket\"): dashboard caching",
+          "c": [
+            {
+              "t": "Branch: `feature/ABC-426`"
+            },
+            {
+              "t": "Pull Request: [acme/webapp#185](https://github.com/acme/webapp/pull/185 \"ref:fa-code-pull-request\")"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

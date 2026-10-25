@@ -1,0 +1,11 @@
+{
+  "name": "pd-template",
+  "private": true,
+  "type": "module",
+  "description": "Static read-only day viewer for the Daily Activity QR codes",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "serve": "python3 -m http.server 8080"
+  },
+  "engines": { "node": ">=22" }
+}
