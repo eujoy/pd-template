@@ -48,9 +48,10 @@ Limits the viewer enforces: 256 KiB inflated, 5,000 items, 200 sections, 6 level
 The first item of a section is the card heading. The body lists that item's children first, then any
 further top-level items.
 
-Item text is inline markdown: `[label](https://… "ref:fa-icon")`, `` `code` ``, `**bold**`, `*italic*`.
-Only `http` and `https` links are links. Everything else is shown as plain text, and nothing is ever
-inserted as HTML.
+Item text supports inline markdown: `[label](https://… "ref:fa-icon")`, `` `code` ``, `**bold**`, `*italic*`.
+Only `http` and `https` links are links. The backend may also encode an icon-only reference as
+`<span title="ref:fa-icon">text</span>`; the viewer recognizes only this exact form and renders its
+icon and escaped text as DOM nodes. Other markup stays plain text, and nothing is ever inserted as HTML.
 
 ## Fixtures
 

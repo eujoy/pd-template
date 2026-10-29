@@ -25,6 +25,8 @@ function inline(parent, text) {
       if (t.icon) a.append(icon(t.icon));
       a.append(document.createTextNode(t.text));
       parent.append(a);
+    } else if (t.type === "reference") {
+      parent.append(icon(t.icon, "ref__icon"), document.createTextNode(t.text));
     } else {
       parent.append(el({ code: "code", strong: "strong", em: "em" }[t.type], "", t.text));
     }
