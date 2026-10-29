@@ -1,0 +1,28 @@
+js/markdown.js
+  s_8143af60a38a04::t_aba03b7306355c 3
+  s_8143af60a38a04::t_860ff3661ad99a 6-12,19-28,30
+js/view.js
+  s_8143af60a38a04::t_af9e7c69fbac6f 28-29
+css/viewer.css
+  s_8143af60a38a04::t_a415978b0ee707 61
+docs/PAYLOAD.md
+  s_8143af60a38a04::t_97e5902f14e58a 51-54
+test/markdown.test.js
+  s_8143af60a38a04::t_807128f0dbbafe 31-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "a7fada376f443d8eb1790c83cf59a73b30c9aa68",
+  "prompts": {},
+  "sessions": {
+    "s_8143af60a38a04": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9d4a0ba7-3b8e-4b00-8e88-15687b82fb94",
+        "model": "gpt-luna"
+      },
+      "human_author": "Angelos Giannis <angelos.giannis@gmail.com>"
+    }
+  }
+}
