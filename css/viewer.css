@@ -58,7 +58,7 @@ button.card-h { cursor: pointer; min-height: 44px; -webkit-tap-highlight-color: 
 .card li::marker { color: var(--text-tertiary); }
 .card li ul { padding: 0 0 0 14px; }
 .card a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
-.card a i { margin-right: 5px; font-size: 12px; }
+.card a i, .card i.ref__icon { margin-right: 5px; font-size: 12px; }
 code { font-family: var(--font-mono); font-size: 13.5px; }
 
 .card.off { background: var(--orange-dim); border-left-color: var(--orange); }

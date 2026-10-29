@@ -28,6 +28,29 @@ test("code, bold and italic", () => {
   ]);
 });
 
+test("icon-only references render as a safe reference token", () => {
+  assert.deepEqual(tokenize('Branch: <span title="ref:fa-code-branch">feature/mobile</span>'), [
+    { type: "text", text: "Branch: " },
+    { type: "reference", text: "feature/mobile", icon: "fa-code-branch" },
+  ]);
+});
+
+test("reference text is decoded from the backend's HTML escaping", () => {
+  assert.deepEqual(tokenize('<span title="ref:fa-tag">A&amp;B &lt;fix&gt;</span>'), [
+    { type: "reference", text: "A&B <fix>", icon: "fa-tag" },
+  ]);
+});
+
+test("malformed or unsafe reference spans stay plain text", () => {
+  for (const span of [
+    `<span title='ref:fa-code-branch'>branch</span>`,
+    `<span title="ref:fa-code-branch onclick=alert(1)">branch</span>`,
+    `<span title="ref:fa-code-branch"><img src=x onerror=alert(1)></span>`,
+  ]) {
+    assert.deepEqual(tokenize(span), [{ type: "text", text: span }]);
+  }
+});
+
 test("only http(s) links are links", () => {
   for (const url of ["javascript:alert(1)", "data:text/html,x", "file:///etc/passwd"]) {
     const tokens = tokenize(`[x](${url})`);
